@@ -1,0 +1,32 @@
+<div class="customer-detail">
+  <div class="detail-header">
+    <h2>Customer Details</h2>
+    <button class="close-button" (click)="onClose()">×</button>
+  </div>
+
+  <div class="detail-content">
+    <div class="detail-item">
+      <label>First Name:</label>
+      <p>{{customer.first_name}}</p>
+    </div>
+    
+    <div class="detail-item">
+      <label>Last Name:</label>
+      <p>{{customer.last_name}}</p>
+    </div>
+    
+    <div class="detail-item">
+      <label>Email:</label>
+      <p>{{customer.email}}</p>
+    </div>
+    
+    <div class="detail-item">
+      <label>Contact Number:</label>
+      <p>{{customer.contact_number}}</p>
+    </div>
+  </div>
+
+  <div class="detail-actions">
+    <button class="edit-button" (click)="onEdit()">Edit Customer</button>
+  </div>
+</div>
